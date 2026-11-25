@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bistró Olivo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menú/ navegador-->
+  <header id="cabecera" class="fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark container py-3">
+      <a href="#" class="navbar-brand marca">Bistró <em>Olivo</em></a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#enlaces">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="enlaces">
+        <ul class="navbar-nav mx-auto gap-md-4">
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#carta" class="nav-link">La Carta</a></li>
+          <li><a href="#reservas" class="nav-link">Reservas</a></li>
+        </ul>
+        <a href="#reservas" class="btn btn-dorado px-4">Reservar mesa</a>
+      </div>
+    </nav>
+  </header>
+
+  <!--portada-->
+  <section class="hero text-center d-flex align-items-center">
+    <div class="container aparecer" style="max-width: 820px;">
+      <p class="pre-titulo">Cocina de mercado · Madrid</p>
+      <h1 class="hero-titulo">El sabor de lo <em>auténtico</em></h1>
+      <p class="hero-texto mx-auto mb-5">Producto de temporada, fuego lento y una mesa donde apetece quedarse.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#reservas" class="btn btn-dorado btn-lg px-5">Reservar mesa</a>
+        <a href="#carta" class="btn btn-borde btn-lg px-5">Ver la carta</a>
+      </div>
+    </div>
+    <a href="#nosotros" class="bajar"><i class="bi bi-chevron-down"></i></a>
+  </section>
+
+  <!--foto del chef y la breve explicacion-->
+  <section id="nosotros" class="seccion">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 revelar">
+          <div class="marco-foto"><img src="imagenes/nosotros.jpg" alt="Chef emplatando"></div>
+        </div>
+        <div class="col-lg-6 ps-lg-5 revelar">
+          <p class="pre-titulo">Nuestra historia</p>
+          <h2 class="titulo mb-4">Del mercado <em>a tu mesa</em></h2>
+          <p class="texto-gris">
+            Cada mañana elegimos el producto en el mercado y lo convertimos en una carta corta que cambia
+            con las estaciones. Cocinamos a la brasa y a fuego lento, sin prisas, para que cada plato
+            sepa exactamente a lo que es.
+          </p>
+          <div class="row text-center cifras g-0 my-4">
+            <div class="col-4"><strong>10</strong>años de cocina</div>
+            <div class="col-4"><strong>15</strong>productores locales</div>
+            <div class="col-4"><strong>4</strong>cartas al año</div>
+          </div>
+          <div class="caja-menu d-flex justify-content-between align-items-center gap-3">
+            <div>
+              <p class="mb-1 fw-medium">Menú del día</p>
+              <p class="texto-gris small mb-0">Primero, segundo, postre, pan y bebida · Martes a viernes</p>
+            </div>
+            <span class="precio-menu">18 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Las tres fotos de la comida-->
+  <section id="carta" class="seccion fondo-oscuro">
+    <div class="container">
+      <div class="text-center mb-5 revelar">
+        <p class="pre-titulo">La carta</p>
+        <h2 class="titulo">Platos <em>estrella</em></h2>
+        <p class="texto-gris">Nuestra selección favorita de esta temporada</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 revelar">
+          <div class="plato">
+            <img src="imagenes/plato1.jpg" alt="Lubina a la brasa">
+            <div class="plato-info">
+              <span class="plato-precio">21 €</span>
+              <h3>Lubina a la brasa</h3>
+              <p>Con verduras de temporada asadas y aceite de hierbas frescas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 revelar">
+          <div class="plato">
+            <img src="imagenes/plato2.jpg" alt="Alcachofas confitadas">
+            <div class="plato-info">
+              <span class="plato-precio">14 €</span>
+              <h3>Alcachofas confitadas</h3>
+              <p>Alcachofa de Tudela, ajo tierno, albahaca y aceite de oliva virgen extra.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 revelar">
+          <div class="plato">
+            <img src="imagenes/plato3.jpg" alt="Tallarines salteados">
+            <div class="plato-info">
+              <span class="plato-precio">16 €</span>
+              <h3>Tallarines salteados</h3>
+              <p>Pasta fresca salteada al wok con verduras, sésamo y salsa de la casa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Para reservar-->
+  <section id="reservas" class="seccion">
+    <div class="container">
+      <div class="row g-0 caja-reserva revelar">
+        <div class="col-lg-5 reserva-foto d-flex align-items-end">
+          <div class="p-4 p-md-5">
+            <p class="pre-titulo">Reservas</p>
+            <h2 class="titulo mb-3">Reserva <em>tu mesa</em></h2>
+            <p class="texto-gris mb-0">Martes a domingo<br>13:00 – 16:00 · 20:00 – 23:30</p>
+          </div>
+        </div>
+        <form id="formReserva" class="col-lg-7 p-4 p-md-5" novalidate>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label class="form-label">Fecha</label>
+              <input type="date" class="form-control" required>
+              <div class="invalid-feedback">Elige una fecha.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Comensales</label>
+              <select class="form-select">
+                <option>1 persona</option>
+                <option selected>2 personas</option>
+                <option>3 personas</option>
+                <option>4 personas</option>
+                <option>6 personas</option>
+                <option>8 personas</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Nombre completo</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Ej. Laura Gómez" required>
+              <div class="invalid-feedback">Escribe tu nombre.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" placeholder="600 000 000" required>
+              <div class="invalid-feedback">Escribe tu teléfono.</div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-dorado btn-lg w-100">Confirmar reserva</button>
+            </div>
+          </div>
+          <div id="mensaje" class="alert mensaje-ok mt-4 mb-0 d-none"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="footer pt-5 pb-4 small">
+    <div class="container">
+      <div class="row g-4 text-center text-md-start">
+        <div class="col-md-4">
+          <p class="marca mb-2">Bistró <em>Olivo</em></p>
+          <p class="mb-0">Cocina de mercado en el centro de Madrid.</p>
+        </div>
+        <div class="col-md-4">
+          <p class="footer-titulo">Contacto</p>
+          <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Calle del Olivo 14, Madrid</p>
+          <p class="mb-1"><i class="bi bi-telephone me-2"></i>910 00 00 00</p>
+          <p class="mb-0"><i class="bi bi-envelope me-2"></i>hola@bistroolivo.es</p>
+        </div>
+        <div class="col-md-4">
+          <p class="footer-titulo">Horario</p>
+          <p class="mb-1">Martes a domingo</p>
+          <p class="mb-1">13:00 – 16:00 · 20:00 – 23:30</p>
+          <p class="mb-0">Lunes cerrado</p>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="text-center mb-0">© 2026 Bistró Olivo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
